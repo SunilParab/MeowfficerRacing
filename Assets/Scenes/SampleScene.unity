@@ -808,7 +808,7 @@ Transform:
   m_GameObject: {fileID: 1032257972}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7999872, y: 1.2468599, z: -0.17921574}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1353,7 +1353,7 @@ Transform:
   m_GameObject: {fileID: 1826733943}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16065617, y: 2.0128982, z: 0.21724327}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1668,6 +1668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 3281517877166865896, guid: 142a13cf49ee0654988228340e0af25d, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7203562148967113549, guid: 142a13cf49ee0654988228340e0af25d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.28
@@ -1708,6 +1712,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7744808948948846470, guid: 142a13cf49ee0654988228340e0af25d, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1719,7 +1727,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 6216953729705444487}
   - {fileID: 1032257973}
-  - {fileID: 6946219116035070320}
   - {fileID: 1826733944}
+  - {fileID: 6216953729705444487}
+  - {fileID: 6946219116035070320}
