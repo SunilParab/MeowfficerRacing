@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float sensitivity = 5;
 
+    public int score = 0;
+
     Collider collider;
 
     [SerializeField]
@@ -108,7 +110,14 @@ public class PlayerController : MonoBehaviour
     }
 
 
-        bool IsGrounded()
+    void OnTriggerEnter(Collider collision) {
+        GameObject other = collision.gameObject;
+        score += other.tag.Equals("Coin") ? 5 : -10;
+        Destroy(other);
+    }
+
+
+    bool IsGrounded()
     {
         return Physics.Raycast(transform.position, -Vector3.up, transform.localScale.y + 0.1f);
     }
